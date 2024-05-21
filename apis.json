@@ -1,0 +1,5673 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "ScreenConnect",
+    "version": "24.1.7.8892"
+  },
+  "servers": [
+    {
+      "url": "https://geeeeker.screenconnect.com/"
+    }
+  ],
+  "paths": {
+    "/App_Extensions/2d558935-686a-4bd0-9991-07539f5fe749/Service.ashx/command-to-session/send": {
+      "post": {
+        "operationId": "SendCommandToSession",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "command": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/App_Extensions/2d558935-686a-4bd0-9991-07539f5fe749/Service.ashx/message-to-session/send": {
+      "post": {
+        "operationId": "SendMessageToSession",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "byHost": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "message": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/App_Extensions/2d558935-686a-4bd0-9991-07539f5fe749/Service.ashx/note-to-session": {
+      "post": {
+        "operationId": "AddNoteToSession",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "noteBody": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/App_Extensions/2d558935-686a-4bd0-9991-07539f5fe749/Service.ashx/session": {
+      "post": {
+        "operationId": "CreateSession",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionType": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "name": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "isPublic": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "code": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "customPropertyValues": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/App_Extensions/2d558935-686a-4bd0-9991-07539f5fe749/Service.ashx/session-by-session-id": {
+      "get": {
+        "operationId": "GetSessionBySessionID",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "sessionID",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/App_Extensions/2d558935-686a-4bd0-9991-07539f5fe749/Service.ashx/session-custom-properties": {
+      "put": {
+        "operationId": "UpdateSessionCustomProperties",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "newCustomProperties": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/App_Extensions/2d558935-686a-4bd0-9991-07539f5fe749/Service.ashx/session-details-by-session-id": {
+      "get": {
+        "operationId": "GetSessionDetailsBySessionID",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "sessionID",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/App_Extensions/2d558935-686a-4bd0-9991-07539f5fe749/Service.ashx/session-name": {
+      "put": {
+        "operationId": "UpdateSessionName",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "newName": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/App_Extensions/2d558935-686a-4bd0-9991-07539f5fe749/Service.ashx/sessions-by-filter": {
+      "get": {
+        "operationId": "GetSessionsByFilter",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "sessionFilter",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/App_Extensions/2d558935-686a-4bd0-9991-07539f5fe749/Service.ashx/sessions-by-name": {
+      "get": {
+        "operationId": "GetSessionsByName",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "sessionName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/App_Extensions/2d558935-686a-4bd0-9991-07539f5fe749/Service.ashx/toolbox-item-to-session/send": {
+      "post": {
+        "operationId": "SendToolboxItemToSession",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "toolboxItemName": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/App_Extensions/6fadbbb8-9540-4612-8504-937c5083bca7/Service.ashx/all-queued-commands": {
+      "delete": {
+        "operationId": "RemoveAllQueuedCommands",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AppearanceService.ashx/resource": {
+      "put": {
+        "operationId": "SaveResource",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerAppearance\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "resourceType": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "key": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "isImage": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "overrideValuesByCultureKey": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AppearanceService.ashx/resource-info": {
+      "get": {
+        "operationId": "GetResourceInfo",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerAppearance\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AppearanceService.ashx/theme": {
+      "put": {
+        "operationId": "SetTheme",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "themeName": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AppearanceService.ashx/theme-info": {
+      "get": {
+        "operationId": "GetThemeInfo",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AuditService.ashx/audit-info": {
+      "get": {
+        "operationId": "GetAuditInfo",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AuditService.ashx/audit-level/apply": {
+      "post": {
+        "operationId": "ApplyAuditLevel",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "auditLevel": {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AuditService.ashx/audit-log/query": {
+      "post": {
+        "operationId": "QueryAuditLog",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "minTime": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "maxTime": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "sessionName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "shouldIncludeSessionCaptures": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "sessionEventTypes": {},
+                  "securityEventTypes": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AuthenticationService.ashx/external-login-url": {
+      "get": {
+        "operationId": "GetExternalLoginUrl",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✔\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✔\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "providerName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          },
+          {
+            "name": "applicationBaseUrl",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          },
+          {
+            "name": "returnUrl",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          },
+          {
+            "name": "loginHint",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AuthenticationService.ashx/login/try": {
+      "post": {
+        "operationId": "TryLogin",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✔\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✔\n* ShouldImposeOperationLimit: ✔\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "userName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "password": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "oneTimePassword": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "shouldTrust": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "securityNonce": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AuthenticationService.ashx/logout/try": {
+      "post": {
+        "operationId": "TryLogout",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✔\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✔\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AuthenticationService.ashx/password/change": {
+      "post": {
+        "operationId": "ChangePassword",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✔\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✔\n* ShouldImposeOperationLimit: ✔\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "userName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "currentPassword": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "newPassword": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "verifyNewPassword": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AuthenticationService.ashx/password-reset/initiate": {
+      "post": {
+        "operationId": "InitiatePasswordReset",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✔\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✔\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "userName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "securityNonce": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/AuthenticationService.ashx/reset-password/try": {
+      "post": {
+        "operationId": "TryResetPassword",
+        "deprecated": false,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✔\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✔\n* ShouldImposeOperationLimit: ✔\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "resetCode": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "userName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "newPassword": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "verifyNewPassword": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "securityNonce": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/DatabaseService.ashx/action": {
+      "put": {
+        "operationId": "SaveAction",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerDatabase\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "action": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "DeleteAction",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerDatabase\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "actionID",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/DatabaseService.ashx/configuration": {
+      "get": {
+        "operationId": "GetConfiguration",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerDatabase\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/DatabaseService.ashx/schedule": {
+      "put": {
+        "operationId": "SaveSchedule",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerDatabase\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "runAtUtcTimeMinutes": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "daysIncludedOrExcluded": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "days": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/ExtensionService.ashx/extension/install": {
+      "post": {
+        "operationId": "InstallExtension",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "packageContent": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/ExtensionService.ashx/extension/uninstall": {
+      "post": {
+        "operationId": "UninstallExtension",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "extensionID": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/ExtensionService.ashx/extension-enabled": {
+      "put": {
+        "operationId": "SetExtensionEnabled",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "extensionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "enabledOrDisabled": {
+                    "type": "boolean",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/ExtensionService.ashx/extension-infos": {
+      "get": {
+        "operationId": "GetExtensionInfos",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/ExtensionService.ashx/extension-setting-values": {
+      "put": {
+        "operationId": "SaveExtensionSettingValues",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "extensionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "settingValues": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/ExtensionService.ashx/instance-user-info": {
+      "get": {
+        "operationId": "GetInstanceUserInfo",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/ExtensionService.ashx/review/sign": {
+      "post": {
+        "operationId": "SignReview",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "reviewComment": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "reviewerDisplayName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "reviewRating": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/LicenseService.ashx/basic-license-capabilities": {
+      "get": {
+        "operationId": "GetBasicLicenseCapabilities",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/LicenseService.ashx/license": {
+      "post": {
+        "operationId": "AddLicense",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "userString": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "RemoveLicense",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "licenseID",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/LicenseService.ashx/license-info": {
+      "get": {
+        "operationId": "GetLicenseInfo",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/LicenseService.ashx/upgrade-url": {
+      "get": {
+        "operationId": "GetUpgradeUrl",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/MailService.ashx/email/send": {
+      "post": {
+        "operationId": "SendEmail",
+        "deprecated": false,
+        "summary": "Known to require authentication",
+        "description": "* DemandsAnyPermission: ✔\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "to": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "subjectResourceBaseNameFormat": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "subjectResourceNameFormatArgs": {},
+                  "subjectResourceFormatArgs": {},
+                  "bodyResourceBaseNameFormat": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "bodyResourceNameFormatArgs": {},
+                  "bodyResourceFormatArgs": {},
+                  "isBodyHtml": {
+                    "type": "boolean",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/MailService.ashx/mail-configuration": {
+      "put": {
+        "operationId": "SaveMailConfiguration",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✔\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "defaultMailFromAddress": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "smtpRelayServerHostName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "defaultMailToAddress": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/MailService.ashx/mail-configuration-info": {
+      "get": {
+        "operationId": "GetMailConfigurationInfo",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✔\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/MailService.ashx/test-email/send": {
+      "post": {
+        "operationId": "SendTestEmail",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✔\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "from": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "relayHost": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "to": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/OverviewService.ashx/overview-info": {
+      "get": {
+        "operationId": "GetOverviewInfo",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/access-token": {
+      "get": {
+        "operationId": "GetAccessToken",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "sessionGroupPathPartsOrName",
+            "in": "query",
+            "schema": {}
+          },
+          {
+            "name": "sessionID",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/activity/notify": {
+      "post": {
+        "operationId": "NotifyActivity",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/delegated-access-token": {
+      "get": {
+        "operationId": "GetDelegatedAccessToken",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "sessionGroupPathPartsOrName",
+            "in": "query",
+            "schema": {}
+          },
+          {
+            "name": "sessionID",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          },
+          {
+            "name": "sessionPermissions",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expireSeconds",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "memo",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/distinct-custom-property-values": {
+      "get": {
+        "operationId": "GetDistinctCustomPropertyValues",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "customPropertyIndices",
+            "in": "query",
+            "schema": {}
+          },
+          {
+            "name": "sessionType",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/eligible-hosts": {
+      "get": {
+        "operationId": "GetEligibleHosts",
+        "deprecated": true,
+        "summary": "Known to require authentication",
+        "description": "* DemandsAnyPermission: ✔\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/feedback/send": {
+      "post": {
+        "operationId": "SendFeedback",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "rating": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "comments": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/initiated-join/log": {
+      "post": {
+        "operationId": "LogInitiatedJoin",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "processType": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "data": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/live-data": {
+      "get": {
+        "operationId": "GetLiveData",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "requestInfoMap",
+            "in": "query",
+            "schema": {}
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/session": {
+      "post": {
+        "operationId": "CreateSession",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionType": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "name": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "isPublic": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "code": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "customPropertyValues": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/session-code": {
+      "put": {
+        "operationId": "UpdateSessionCode",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionGroupPathPartsOrName": {},
+                  "sessionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "code": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/session-custom-property-value": {
+      "put": {
+        "operationId": "UpdateSessionCustomPropertyValue",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionGroupPathPartsOrName": {},
+                  "sessionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "customPropertyIndex": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "customPropertyValue": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/session-details": {
+      "get": {
+        "operationId": "GetSessionDetails",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "sessionGroupPathPartsOrName",
+            "in": "query",
+            "schema": {}
+          },
+          {
+            "name": "sessionID",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/session-events": {
+      "post": {
+        "operationId": "AddSessionEvents",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionGroupPathPartsOrName": {},
+                  "eventEntries": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/session-is-public-and-code": {
+      "put": {
+        "operationId": "UpdateSessionIsPublicAndCode",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionGroupPathPartsOrName": {},
+                  "sessionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "isPublic": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "code": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/session-name": {
+      "put": {
+        "operationId": "UpdateSessionName",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionGroupPathPartsOrName": {},
+                  "sessionID": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "name": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/sessions": {
+      "put": {
+        "operationId": "UpdateSessions",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionGroupPathPartsOrName": {},
+                  "sessionIDs": {},
+                  "names": {},
+                  "customPropertyValues": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/sessions/transfer": {
+      "post": {
+        "operationId": "TransferSessions",
+        "deprecated": true,
+        "summary": "",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionGroupPathPartsOrName": {},
+                  "sessionIDs": {},
+                  "toHost": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/PageService.ashx/toolbox": {
+      "get": {
+        "operationId": "GetToolbox",
+        "deprecated": true,
+        "summary": "Known to require authentication",
+        "description": "* DemandsAnyPermission: ✔\n* DemandPermissionNames: \\<empty\\>\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SecurityService.ashx/access/revoke": {
+      "post": {
+        "operationId": "RevokeAccess",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "tokenType": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SecurityService.ashx/cloud-web-authentication-provider-enabled": {
+      "put": {
+        "operationId": "SetCloudWebAuthenticationProviderEnabled",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "enabledOrDisabled": {
+                    "type": "boolean",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SecurityService.ashx/role": {
+      "post": {
+        "operationId": "CreateRole",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "roleName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "globalPermissionEntries": {},
+                  "scopedPermissionEntries": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "SaveRole",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "originalRoleName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "roleName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "globalPermissionEntries": {},
+                  "scopedPermissionEntries": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "DeleteRole",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "roleName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SecurityService.ashx/security-configuration-info": {
+      "get": {
+        "operationId": "GetSecurityConfigurationInfo",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SecurityService.ashx/session-group-infos": {
+      "get": {
+        "operationId": "GetSessionGroupInfos",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "sessionType",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "sessionGroupPathParts",
+            "in": "query",
+            "schema": {}
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SecurityService.ashx/user": {
+      "put": {
+        "operationId": "SaveUser",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "userSourceName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "originalUserName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "newUserName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "password": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "verifyPassword": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "passwordQuestion": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "displayName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "comment": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "roleNames": {},
+                  "forcePasswordChange": {
+                    "type": "boolean",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "DeleteUser",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "userSourceName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          },
+          {
+            "name": "existingMembershipUserName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SecurityService.ashx/user/lookup": {
+      "post": {
+        "operationId": "LookupUser",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "userSourceName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "testUserName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "configurationKeys": {},
+                  "configurationValues": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SecurityService.ashx/user-source": {
+      "delete": {
+        "operationId": "RemoveUserSource",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "userSourceName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "operationId": "AddUserSource",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "typeName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "userSourceName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "enabledOrDisabled": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "lockedOrUnlocked": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "configurationKeys": {},
+                  "configurationValues": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SecurityService.ashx/user-source-configuration": {
+      "put": {
+        "operationId": "SaveUserSourceConfiguration",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "userSourceName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "configurationKeys": {},
+                  "configurationValues": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SecurityService.ashx/user-source-enabled": {
+      "put": {
+        "operationId": "SetUserSourceEnabled",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "userSourceName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "enabledOrDisabled": {
+                    "type": "boolean",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SecurityService.ashx/user-source-locked": {
+      "put": {
+        "operationId": "SetUserSourceLocked",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerSecurity\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "userSourceName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "lockedOrUnlocked": {
+                    "type": "boolean",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SessionGroupService.ashx/session-group": {
+      "put": {
+        "operationId": "UpdateSessionGroup",
+        "deprecated": false,
+        "summary": "Known required permission: ManageSessionGroups",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: ManageSessionGroups\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "originalSessionGroup": {},
+                  "newSessionGroup": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/SessionGroupService.ashx/session-groups": {
+      "get": {
+        "operationId": "GetSessionGroups",
+        "deprecated": false,
+        "summary": "Known required permission: ManageSessionGroups",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: ManageSessionGroups\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "SaveSessionGroups",
+        "deprecated": false,
+        "summary": "Known required permission: ManageSessionGroups",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: ManageSessionGroups\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "sessionGroups": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/StatusService.ashx/status-check/perform": {
+      "post": {
+        "operationId": "PerformStatusCheck",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✖\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "statusCheckName": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/ToolboxService.ashx/toolbox-file-content/write": {
+      "post": {
+        "operationId": "WriteToolboxFileContent",
+        "deprecated": false,
+        "summary": "Known required permission: ManageSharedToolbox",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: ManageSharedToolbox\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "isDirectory": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "appendOrReplace": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "base64Content": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/ToolboxService.ashx/toolbox-item-download-url": {
+      "get": {
+        "operationId": "GetToolboxItemDownloadUrl",
+        "deprecated": false,
+        "summary": "Known required permission: ManageSharedToolbox",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: ManageSharedToolbox\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "path",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/ToolboxService.ashx/toolbox-operation/process": {
+      "post": {
+        "operationId": "ProcessToolboxOperation",
+        "deprecated": false,
+        "summary": "Known required permission: ManageSharedToolbox",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: ManageSharedToolbox\n* DemandLicenseCapabilities: None\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "operation": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "path": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "originalPath": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/TriggerService.ashx/enabled/toggle": {
+      "post": {
+        "operationId": "ToggleEnabled",
+        "deprecated": true,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerTriggers\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "triggerName": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/TriggerService.ashx/event-triggers": {
+      "get": {
+        "operationId": "GetEventTriggers",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerTriggers\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/TriggerService.ashx/security-event-trigger": {
+      "put": {
+        "operationId": "SaveSecurityEventTrigger",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerTriggers\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "originalTriggerName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "newTriggerName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "isDisabled": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "eventFilter": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "smtpTriggerActions": {},
+                  "httpTriggerActions": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "DeleteSecurityEventTrigger",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerTriggers\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "triggerName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/TriggerService.ashx/security-event-trigger-enabled/toggle": {
+      "post": {
+        "operationId": "ToggleSecurityEventTriggerEnabled",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerTriggers\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "triggerName": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/TriggerService.ashx/session-event-trigger": {
+      "put": {
+        "operationId": "SaveSessionEventTrigger",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerTriggers\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "originalTriggerName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "newTriggerName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "isDisabled": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "eventFilter": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "smtpTriggerActions": {},
+                  "httpTriggerActions": {},
+                  "sessionEventTriggerActions": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "DeleteSessionEventTrigger",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerTriggers\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "triggerName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/TriggerService.ashx/session-event-trigger-enabled/toggle": {
+      "post": {
+        "operationId": "ToggleSessionEventTriggerEnabled",
+        "deprecated": false,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerTriggers\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "triggerName": {
+                    "type": "string",
+                    "format": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/TriggerService.ashx/session-event-triggers": {
+      "get": {
+        "operationId": "GetSessionEventTriggers",
+        "deprecated": true,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerTriggers\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Services/TriggerService.ashx/trigger": {
+      "put": {
+        "operationId": "SaveTrigger",
+        "deprecated": true,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerTriggers\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "originalTriggerName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "newTriggerName": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "isDisabled": {
+                    "type": "boolean",
+                    "format": ""
+                  },
+                  "eventFilter": {
+                    "type": "string",
+                    "format": ""
+                  },
+                  "smtpTriggerActions": {},
+                  "httpTriggerActions": {},
+                  "sessionEventTriggerActions": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "DeleteTrigger",
+        "deprecated": true,
+        "summary": "Known required permission: Administer",
+        "description": "* DemandsAnyPermission: ✖\n* DemandPermissionNames: Administer\n* DemandLicenseCapabilities: AdministerTriggers\n* ShouldAllowInvalidAntiForgeryToken: ✖\n* ShouldTraceActivity: ✔\n* ShouldTraceActivityReturnValue: ✖\n* ShouldImposeOperationLimit: ✖\n* AccessControlOriginFilter: \\<empty\\>",
+        "parameters": [
+          {
+            "name": "triggerName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "errorType": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "message": {
+                      "type": "string",
+                      "format": ""
+                    },
+                    "detail": {
+                      "type": "string",
+                      "format": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
